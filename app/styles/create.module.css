@@ -1,0 +1,165 @@
+.page {
+  height: 100vh;
+  width: 100%;
+  transition: var(--main-transition);
+}
+
+.content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+.surveyMaker {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+}
+
+/* Survey item styles */
+.question {
+  position: absolute;
+  top: 15%;
+  left: 0;
+}
+.question input {
+  font-size: 2em;
+}
+.question input::placeholder {
+  color: var(--main-color);
+}
+
+.item {
+  position: relative;
+  padding: 1.5em;
+  aspect-ratio: 2/3;
+  height: 60%;
+  display: grid;
+  grid-template-rows: 5% auto 1fr;
+  gap: 1rem;
+  border-radius: var(--main-radius);
+  background: var(--item-color);
+  border: 1px solid var(--transparent-white);
+}
+
+.name input {
+  font-weight: 600;
+  color: var(--item-text-color);
+}
+
+.name input::placeholder,
+.text textarea::placeholder {
+  color: #0000004d;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: var(--main-radius);
+}
+
+.image img {
+  margin: 0 0 1rem;
+  height: 100%;
+  max-height: 500px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.imageButton {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--main-radius);
+  background: var(--main-color);
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.imageButton p {
+  color: #0000004d;
+  transition: var(--main-transition);
+}
+.imageButton:hover {
+  background: var(--hover-background);
+}
+.imageButton:hover p {
+  color: var(--main-white);
+}
+
+.text textarea {
+  height: 100%;
+  width: 100%;
+  color: var(--item-text-color);
+  resize: none;
+}
+/**/
+
+.newItem {
+  position: absolute;
+  padding: 1rem 0rem 0rem;
+  bottom: 0;
+  height: 7%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  background: var(--transparent-white);
+  border-top-left-radius: var(--main-radius);
+  border-top-right-radius: var(--main-radius);
+  border: 1px solid var(--transparent-white);
+  transition: var(--main-transition);
+}
+.newItem h3 {
+  color: var(--main-color);
+}
+.newItem:hover {
+  height: 9%;
+  cursor: pointer;
+  background: var(--hover-background);
+  border: none;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  z-index: 30;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: solid 5px var(--item-color);
+  border-radius: 50%;
+  transition: var(--main-transition);
+}
+.button svg {
+  height: 50%;
+}
+.button path {
+  fill: var(--item-color);
+}
+.button:hover {
+  border: solid 5px var(--hover-background);
+}
+.button:hover path {
+  fill: var(--hover-color);
+}
+
+@keyframes expand {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 300px;
+  }
+}

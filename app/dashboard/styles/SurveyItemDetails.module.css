@@ -1,0 +1,52 @@
+.surveyItem {
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 1rem;
+  background: var(--transparent-white);
+  border-radius: var(--main-radius);
+}
+
+.preview {
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 5% auto 1fr;
+  background: var(--item-color);
+  border-radius: var(--main-radius);
+}
+.name {
+  color: var(--item-text-color);
+}
+.details {
+  color: var(--item-text-color);
+}
+
+.results {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.breakdown {
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background: var(--item-color);
+  border-radius: var(--main-radius);
+}
+
+.breakdown h2 {
+  color: var(--item-text-color);
+}
+
+.breakdown li {
+  margin: 0 0 1rem;
+  color: var(--item-text-color);
+}

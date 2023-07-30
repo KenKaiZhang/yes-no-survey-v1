@@ -1,0 +1,36 @@
+.boxesWrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.boxes {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  animation: scrollUp 25s linear infinite;
+}
+
+.boxes span {
+  padding: 1em;
+  display: grid;
+  gap: 1em;
+}
+
+.box {
+  width: 100%;
+  aspect-ratio: 2/3;
+  border-radius: var(--main-radius);
+  background: #ffffff;
+  opacity: 5%;
+}
+
+@keyframes scrollUp {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -100%;
+  }
+}

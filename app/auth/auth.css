@@ -1,0 +1,96 @@
+.authPage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  height: auto;
+  width: 35%;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+}
+.title p {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+form {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+form input:focus,
+form input:not(:placeholder-shown) {
+  outline: none;
+  background: #0000004d;
+}
+
+form input {
+  margin: 1rem 0rem 0rem;
+  padding: 0rem 1rem 0rem;
+  height: 60px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: #00000015;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+form input::placeholder {
+  color: var(--main-color);
+}
+form input[type="submit"] {
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: #ffffff43;
+}
+form input[type="submit"]:hover {
+  background: #0000004d;
+  transition: 0.5s ease;
+}
+
+.divider {
+  margin: 1em 0em 0em;
+  width: 100%;
+  text-align: center;
+}
+
+.socialLogin {
+  height: 100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+  justify-items: center;
+  align-items: center;
+}
+.socialLogin svg {
+  position: relative;
+  height: 35%;
+  cursor: pointer;
+}
+
+.goRegister {
+  text-align: end;
+  color: var(--main-color);
+}
+.goRegister:hover {
+  text-decoration: underline;
+}
+
+.goLogin {
+  margin: 1em 0em 0em;
+  text-align: start;
+  color: var(--main-color);
+}
+.goLogin:hover {
+  text-decoration: underline;
+}

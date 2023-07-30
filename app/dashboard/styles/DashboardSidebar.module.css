@@ -1,0 +1,136 @@
+.bar {
+  position: absolute;
+  height: 100%;
+  width: 25rem;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  background: var(--transparent-white);
+  border-radius: 0 var(--main-radius) var(--main-radius) 0;
+  transition: 0.75s ease;
+}
+
+.searchBarWrapper {
+  padding: 1em;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.searchIcon {
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--transparent-white);
+  border-radius: 50%;
+}
+.searchIcon path {
+  fill: var(--item-text-color);
+}
+
+.searchBar {
+  padding: 0 0 0 1rem;
+  width: 100%;
+  height: 45px;
+  color: var(--item-text-color);
+  background: var(--transparent-white);
+  border-radius: var(--main-radius);
+  transition: var(--main-transition);
+}
+.searchBar::placeholder {
+  color: var(--item-text-color);
+}
+
+.focus input,
+.focus input::placeholder {
+  color: var(--main-color);
+  background: var(--hover-background);
+}
+.focus .searchIcon,
+.focus path {
+  fill: var(--main-color);
+  background: var(--hover-background);
+}
+
+.surveyList {
+  position: relative;
+  padding: 0em 2em 0em;
+  height: 100%;
+  width: 100%;
+}
+.surveyList li {
+  margin: 0em 0em 1em;
+}
+.surveyList button {
+  background: none;
+  border: none;
+}
+.surveyList h2 {
+  transition: var(--main-transition);
+}
+.surveyList h2:hover,
+.activeSurvey h2 {
+  font-weight: 800;
+}
+
+.createButtonWrapper {
+  padding: 0em 1em 0em;
+  position: absolute;
+  bottom: 1em;
+  height: 60px;
+  width: 100%;
+}
+.createButton {
+  height: 100%;
+  width: 100%;
+  border-radius: var(--main-radius);
+  background: var(--transparent-white);
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.createButton:hover {
+  background: var(--hover-background);
+}
+.createButton a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--item-text-color);
+  transition: var(--main-transition);
+}
+.createButton:hover a {
+  color: var(--main-color);
+}
+
+.toggleButton {
+  position: absolute;
+  top: calc(50% - 30px);
+  right: -70px;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border-radius: 50%;
+  border: solid 5px var(--item-color);
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.toggleButton svg {
+  height: 50%;
+  transition: 1s ease;
+}
+.toggleButton:hover {
+  border: solid 5px var(--hover-background);
+}
+.toggleButton:hover path {
+  fill: var(--hover-color);
+}

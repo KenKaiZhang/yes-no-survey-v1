@@ -1,0 +1,38 @@
+.actions {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.action {
+  margin: 2em 0em 2em;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 5px var(--item-color);
+  border-radius: 50%;
+  transition: var(--main-transition);
+}
+
+.action button {
+  height: 100%;
+  width: 100%;
+  background: none;
+  border: none;
+}
+
+.action svg {
+  height: 50%;
+}
+
+.action:hover {
+  border: solid 5px var(--hover-background);
+}
+.action:hover path {
+  fill: var(--hover-color);
+}

@@ -1,0 +1,49 @@
+.bar {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  z-index: 30;
+  transition: var(--main-transition);
+}
+
+.items {
+  padding: 4rem 1rem 0;
+  height: 100%;
+  width: 70%;
+  background: var(--item-color);
+  border-radius: 0 var(--main-radius) var(--main-radius) 0;
+  transition: var(--main-transition);
+}
+
+.item {
+  position: relative;
+  margin: 0 0 1rem;
+  padding: 0 1rem 0;
+  min-height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.item h3 {
+  font-weight: 500;
+  color: var(--item-text-color);
+  cursor: pointer;
+}
+.item h3:hover {
+  font-weight: 700;
+}
+.item svg,
+.delete {
+  position: absolute;
+  right: 0;
+  width: 10%;
+  height: 50%;
+  cursor: pointer;
+}
+.item path {
+  color: var(--item-text-color);
+}

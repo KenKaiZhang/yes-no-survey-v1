@@ -1,0 +1,88 @@
+.messageWrapper {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  background: #00000080;
+  transition: var(--main-transition);
+}
+
+.message {
+  position: absolute;
+  padding: 1rem;
+  width: 50%;
+  aspect-ratio: 5/4;
+  top: 50%;
+  left: 50%;
+  z-index: 50;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 80% 20%;
+  justify-items: center;
+  transform: translate(-50%, -50%);
+}
+
+.info {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 65% 1fr;
+  background: var(--main-color);
+  border-radius: var(--main-radius);
+  box-shadow: 1px 1px 25px var(--transparent-black);
+}
+
+.visual {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  height: 50%;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 5px var(--item-text-color);
+  border-radius: 50%;
+}
+.visual svg {
+  height: 50%;
+}
+.visual path {
+  fill: var(--item-text-color);
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.status h2,
+.status p {
+  margin: 0 0 1rem;
+  color: var(--item-text-color);
+}
+
+.buttons {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button {
+  margin: 0 1rem 0;
+  height: 80%;
+  width: 30%;
+  font-size: 1.2rem;
+  color: var(--main-color);
+  background: var(--transparent-white);
+  border-radius: var(--main-radius);
+  transition: var(--main-transition);
+}
+.buttons button:hover {
+  background: var(--hover-background);
+}

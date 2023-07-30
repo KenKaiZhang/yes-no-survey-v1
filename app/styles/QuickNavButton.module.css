@@ -1,0 +1,12 @@
+.button {
+  height: 50px;
+  width: 150px;
+  border-radius: var(--main-radius);
+  background: var(--transparent-white);
+  border: none;
+  transition: 0.5s ease;
+}
+
+.button:hover {
+  background: var(--hover-background);
+}

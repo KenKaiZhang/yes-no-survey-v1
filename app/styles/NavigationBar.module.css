@@ -1,0 +1,30 @@
+.navigationBar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 45px 45px 45px 45px;
+  gap: 1.5rem;
+}
+
+.button {
+  height: 45px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.button svg {
+  height: 50%;
+}
+
+.button path {
+  transition: var(--main-transition);
+}
+.button:hover path {
+  fill: var(--hover-color);
+}
